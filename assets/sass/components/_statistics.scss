@@ -1,0 +1,23 @@
+.statistics__ {
+    .statistics_Item {
+        border: 2px dashed #E9EEF4;
+        border-radius: 8px;
+        text-align: center;
+        padding: 25px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .icon {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        background-color: #E5F8F8;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        top: -28px;
+        left: -17px;
+        padding: 13px;
+    }
+}

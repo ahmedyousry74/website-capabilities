@@ -1,0 +1,619 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../assets/sass/main.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  <!-- <link rel="stylesheet" href="../assets/css/bootstrap.rtl.min.css"> -->
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo.png">
+  <title>منصة قدرات</title>
+</head>
+<body class=" bg-white">
+
+  <!-- start top navbar -->
+  <section class="top_navbar py-2 px-20 bg-primary-color flex justify-between items-center flex-row">
+    <div class="company_info flex justify-start items-center flex-row gap-4">
+      <div class="flex justify-start items-start flex-row gap-1">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4" d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7.38064 9.85323C8.07664 11.3028 9.02543 12.6615 10.227 13.8631C11.4286 15.0646 12.7872 16.0134 14.2368 16.7094C14.3615 16.7693 14.4239 16.7992 14.5028 16.8222C14.7831 16.904 15.1274 16.8453 15.3648 16.6752C15.4316 16.6274 15.4888 16.5702 15.6031 16.4559C15.9527 16.1063 16.1275 15.9315 16.3033 15.8172C16.9662 15.3862 17.8208 15.3862 18.4836 15.8172C18.6594 15.9315 18.8342 16.1063 19.1838 16.4559L19.3787 16.6508C19.9101 17.1822 20.1759 17.448 20.3202 17.7333C20.6073 18.3009 20.6073 18.9712 20.3202 19.5387C20.1759 19.8241 19.9101 20.0898 19.3787 20.6213L19.2211 20.7789C18.6914 21.3085 18.4266 21.5733 18.0666 21.7756C17.6671 22 17.0466 22.1614 16.5884 22.16C16.1754 22.1588 15.8932 22.0787 15.3288 21.9185C12.2954 21.0575 9.43301 19.433 7.04503 17.045C4.65705 14.6571 3.03257 11.7947 2.1716 8.76131C2.01139 8.19687 1.93129 7.91464 1.93006 7.5017C1.9287 7.04347 2.09006 6.42298 2.31448 6.02348C2.51673 5.66345 2.78154 5.39863 3.31116 4.86901L3.4688 4.71138C4.00024 4.17993 4.26596 3.91421 4.55134 3.76987C5.1189 3.4828 5.78917 3.4828 6.35673 3.76987C6.64211 3.91421 6.90783 4.17993 7.43927 4.71138L7.63414 4.90625C7.98375 5.25585 8.15855 5.43065 8.27284 5.60643C8.70383 6.26932 8.70383 7.1239 8.27284 7.78679C8.15855 7.96257 7.98375 8.13738 7.63414 8.48698C7.51983 8.60129 7.46268 8.65845 7.41483 8.72526C7.24482 8.96269 7.18612 9.30695 7.26785 9.5873C7.29084 9.6662 7.32078 9.72854 7.38064 9.85323Z" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-fifth-color font-medium text-sm"> 0123456789 </span>
+      </div>
+      <div class="flex justify-start items-start flex-row gap-1">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path opacity="0.4" d="M5 14.2864C3.14864 15.1031 2 16.2412 2 17.5C2 19.9853 6.47715 22 12 22C17.5228 22 22 19.9853 22 17.5C22 16.2412 20.8514 15.1031 19 14.2864" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 17C13.5 14 18 12.0637 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 12.0637 10.5 14 12 17Z" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="text-fifth-color font-medium text-sm">
+          الرياض حي الملك فيصل، السعودية                  
+        </span>
+      </div>
+      <div class="flex justify-start items-start flex-row gap-1">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect opacity="0.4" x="2" y="4" width="20" height="16" rx="3" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.8351 12.7154C13.1739 13.1783 12.8433 13.4097 12.4837 13.4993C12.1661 13.5785 11.8339 13.5785 11.5163 13.4993C11.1567 13.4097 10.8261 13.1783 10.1649 12.7154L2 7C2 5.34315 3.34315 4 5 4H19C20.6569 4 22 5.34315 22 7L13.8351 12.7154Z" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          
+          <span class="text-fifth-color font-medium text-sm">
+            Info@Scientific.Tech         
+          </span>
+      </div>
+    </div>
+    <div class="company_social flex justify-start items-center flex-row gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#ffffff" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#ffffff" fill="none">
+          <path d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#ffffff" fill="none">
+          <path d="M4.5 9.5H4C3.05719 9.5 2.58579 9.5 2.29289 9.79289C2 10.0858 2 10.5572 2 11.5V20C2 20.9428 2 21.4142 2.29289 21.7071C2.58579 22 3.05719 22 4 22H4.5C5.44281 22 5.91421 22 6.20711 21.7071C6.5 21.4142 6.5 20.9428 6.5 20V11.5C6.5 10.5572 6.5 10.0858 6.20711 9.79289C5.91421 9.5 5.44281 9.5 4.5 9.5Z" stroke="currentColor" stroke-width="1.5" />
+          <path d="M6.5 4.25C6.5 5.49264 5.49264 6.5 4.25 6.5C3.00736 6.5 2 5.49264 2 4.25C2 3.00736 3.00736 2 4.25 2C5.49264 2 6.5 3.00736 6.5 4.25Z" stroke="currentColor" stroke-width="1.5" />
+          <path d="M12.326 9.5H11.5C10.5572 9.5 10.0858 9.5 9.79289 9.79289C9.5 10.0858 9.5 10.5572 9.5 11.5V20C9.5 20.9428 9.5 21.4142 9.79289 21.7071C10.0858 22 10.5572 22 11.5 22H12C12.9428 22 13.4142 22 13.7071 21.7071C14 21.4142 14 20.9428 14 20L14.0001 16.5001C14.0001 14.8433 14.5281 13.5001 16.0879 13.5001C16.8677 13.5001 17.5 14.1717 17.5 15.0001V19.5001C17.5 20.4429 17.5 20.9143 17.7929 21.2072C18.0857 21.5001 18.5572 21.5001 19.5 21.5001H19.9987C20.9413 21.5001 21.4126 21.5001 21.7055 21.2073C21.9984 20.9145 21.9985 20.4432 21.9987 19.5006L22.0001 14.0002C22.0001 11.515 19.6364 9.50024 17.2968 9.50024C15.9649 9.50024 14.7767 10.1531 14.0001 11.174C14 10.5439 14 10.2289 13.8632 9.995C13.7765 9.84686 13.6531 9.72353 13.505 9.63687C13.2711 9.5 12.9561 9.5 12.326 9.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#ffffff" fill="none">
+        <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" color="#ffffff" fill="none">
+        <path d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z" stroke="currentColor" stroke-width="1.5" />
+        <path d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+      </svg>
+    </div>
+  </section>
+  <!-- end top navbar -->
+
+  <nav class="navbar navbar-expand-lg relative" id="navbar">
+      <a class="navbar-brand d-lg-none" href="index.html">
+          <img src="../assets/images/logo.png" alt="logo" loaing="lazy" width="100" height="100">
+      </a>
+      <button
+        class="btn navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        <img src="../assets/images/menu.svg" alt="" style="filter: invert(1);">
+      </button>
+      <div
+        class="offcanvas offcanvas-start-lg"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header d-flex d-lg-none">
+          <a
+            href="javascript:void(0)"
+            class="text-reset p-0"
+            data-bs-dismiss="offcanvas"
+            aria-label="close"
+          >
+          <img src="../assets/images/close.svg" class="colse_" alt="close" width="25" height="25" loading="lazy">
+        </a>
+        </div>
+        <div class="offcanvas-body p-lg-0 d-flex justify-content-between align-items-center flex-row">
+          <a class="navbar-brand" href="index.html">            
+            <img src="../assets/images/logo.png" alt="logo" loaing="lazy" height="100" width="100" class="object-fit-contain">
+          </a>
+              <ul class="navbar-nav navbar__links d-flex justify-content-between align-items-center flex-md-row">
+                  <li class="nav-item">
+                      <a class="nav-link active position-relative" aria-current="page" href="index.html"
+                      >الرئيسية</a
+                      >
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link position-relative" aria-current="page" href="./about-us.html"
+                      > من نحن </a
+                      >
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link position-relative" aria-current="page" href="./about-us.html"
+                      > خدماتنا </a
+                      >
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link position-relative" aria-current="page" href="./contact-us.html"
+                      >تواصل معنا</a
+                      >
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link position-relative" aria-current="page" href="./blogs.html"
+                      >المدونة</a
+                      >
+                  </li>
+                  </ul>
+                  <div class="flex justify-start items-center lg:flex-row sm:flex-col flex-wrap gap-4 relative">
+                    <button class="text-primary-color font-bold" id="loginType"> تسجيل الدخول </button>
+                    <button class="auth__navbar flex justify-center items-center flex-row gap-2" id="signType">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.4" d="M18.6837 19.4384C18.0754 18.0052 16.6551 17 15 17H9C7.34493 17 5.92462 18.0052 5.3163 19.4384" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13.5C14.2091 13.5 16 11.7091 16 9.5C16 7.29086 14.2091 5.5 12 5.5C9.79086 5.5 8 7.29086 8 9.5C8 11.7091 9.79086 13.5 12 13.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> 
+                        <span> انضم إلينا </span>
+                    </button>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+    <section class="page_header p-20 flex justify-start items-start flex-row relative" style="background-image: url('../assets/images/section-top.jpg');">
+        <div class="page_header_info flex justify-center items-center w-full flex-col gap-2">
+            <h1 class="text-primary-color font-bold text-4xl"> من نحن </h1>
+            <div aria-label="breadcrumb flex justify-center items-center flex-row">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item "><a href="index.html" class="text-third-color font-medium text-md">الرئيسية</a></li>
+                  <li class="breadcrumb-item active text-md font-medium text-fourth-color" aria-current="page">من نحن</li>
+                </ol>
+              </div>
+        </div>
+        <div class="shape-1 absolute top-[150px] left-[70%] rotate">
+            <img src="../assets/images/idea.svg" alt="" class="opacity-50">
+          </div>
+          <div class="shape-2 absolute top-[50px] right-9 moveHorizontal">
+            <img src="../assets/images/section-icon-1.svg" alt="" class="opacity-50">
+          </div>
+          <div class="shape-3 absolute top-[150px] left-[18%] bounce">
+            <img src="../assets/images/section-icon-2.svg" alt="" class="opacity-50">
+          </div>
+          <div class="shape-3 absolute top-[50px] left-[18%] moveHorizontal">
+            <img src="../assets/images/shape-2.svg" alt="" class="opacity-50">
+          </div>
+    </section>
+
+      <!-- start about us  -->
+      <section class="about__us px-20 pt-16">
+        <div class="title__ flex justify-center items-center flex-row">
+          <h3 class="text-third-color font-semibold text-2xl relative"> من نحن </h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about_us_info mt-12 flex justify-start items-start flex-col gap-4 mb-8">
+              <span class="text-third-color text-lg font-semibold leading-[2] wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s"> اختبار القدرات هو مقياس موحد لجميع الطلاب في العامين الأخيرين من المدرسة الثانوية, حيث يساعد المؤسسات التعليمية بعد الثانوية(الجامعات والكليات) على اختيار الطلاب الأكثر قدرة على متابعة واستيفاء متطلبات الدراسة في تلك المؤسسات
+              </span>
+              <span class="text-fourth-color text-md font-normal wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s"> يقيس القدرات القدرة على الفهم والتطبيق والاستدلال والتحليل في مجالي اللغة والرياضيات </span>
+            </div>
+            <div class="flex justify-start items-start gap-3 flex-row mb-8">
+              <svg width="60" height="60" fill="none" viewBox="0 0 45 45"><g fill="#324891" clip-path="url(#clip0_2797_63)"><path d="M22.078.176c-.272.255-.299.518-.263 2.97l.026 2.233.246.21c.308.265.519.265.826 0l.246-.21.027-2.233c.017-1.221.008-2.355-.027-2.504-.105-.58-.685-.827-1.08-.466zM7.031 6.416a.691.691 0 00-.176.466c0 .255.194.474 1.75 2.03 1.529 1.53 1.784 1.75 2.03 1.75.36 0 .641-.282.641-.643 0-.246-.21-.492-1.749-2.03C7.972 6.442 7.734 6.24 7.488 6.24a.685.685 0 00-.457.176zM35.473 7.99c-1.538 1.537-1.75 1.783-1.75 2.03 0 .36.282.641.642.641.246 0 .501-.22 2.03-1.749 1.556-1.556 1.75-1.775 1.75-2.03 0-.378-.264-.642-.633-.642-.246 0-.484.202-2.04 1.75zM21.067 7.392c-.826.087-2.285.43-3.05.72-2.97 1.117-5.686 3.534-7.083 6.32-.352.694-.36.843-.115 1.16.22.272.686.316.888.07.07-.079.316-.492.545-.905a12.092 12.092 0 016.451-5.476c2.33-.835 5.256-.835 7.594 0a11.85 11.85 0 016.6 5.81c.906 1.784 1.293 3.41 1.293 5.484 0 1.951-.378 3.613-1.213 5.309-.536 1.08-1.196 2.004-2.365 3.305-1.353 1.511-1.837 2.276-2.144 3.374l-.14.528h-11.47l-.203-.58c-.369-1.108-.861-1.802-2.628-3.744-1.3-1.433-2.074-2.743-2.645-4.448-.475-1.432-.607-2.452-.536-4.174.026-.81.079-1.653.105-1.881.044-.343.018-.44-.14-.598-.255-.255-.756-.21-.976.088-.37.51-.466 3.392-.176 5.115a13.116 13.116 0 003.164 6.54c1.758 1.96 1.97 2.223 2.294 2.864.185.378.36.853.396 1.055.026.211.079 1.547.114 2.97l.061 2.602.29.58c.185.387.458.739.8 1.055l.51.475.044.747c.07 1.336.747 2.373 1.916 2.927l.571.272h5.625l.572-.272c1.169-.554 1.845-1.591 1.916-2.927l.044-.747.51-.475c.342-.316.615-.668.8-1.054l.29-.58.043-2.954c.044-2.786.062-2.97.246-3.436.255-.642.906-1.556 1.705-2.426 2.206-2.364 3.296-4.474 3.78-7.277.15-.897.167-1.292.131-2.681-.07-2.285-.386-3.568-1.38-5.581-2.408-4.86-7.62-7.726-13.034-7.154zm7.234 28.16v1.098h-.923c-.809 0-.95.027-1.099.176a.657.657 0 00.053.958c.202.158.36.185 1.099.185h.87v.237c-.009.325-.308.976-.598 1.283-.132.14-.395.343-.589.44-.343.193-.422.193-4.482.193-4.06 0-4.14 0-4.483-.193a2.51 2.51 0 01-.588-.44c-.29-.307-.59-.958-.598-1.283v-.237H23.81l.22-.194c.316-.29.342-.659.052-.949-.167-.167-.29-.176-3.647-.176h-3.472v-2.197H28.3v1.099zm-1.67 6.258c-.009.72-.66 1.546-1.398 1.766-.457.14-4.746.14-5.203 0-.738-.22-1.388-1.046-1.397-1.766v-.326h7.998v.326z"></path><path d="M26.877 16.427c-.58.193-.914.545-3.059 3.305-1.221 1.573-2.25 2.856-2.285 2.856-.035 0-.571-.563-1.186-1.257-1.433-1.59-1.653-1.793-2.233-1.96-1.758-.527-3.304 1.319-2.47 2.953.088.167.818 1.037 1.626 1.934 3.481 3.85 3.402 3.78 4.395 3.78.624 0 1.116-.203 1.503-.625.58-.624 2.848-3.621 2.9-3.832.123-.483-.633-.94-1.028-.624-.08.062-.756.914-1.512 1.88-.756.977-1.432 1.794-1.511 1.829-.211.08-.563.062-.73-.026-.22-.123-4.447-4.826-4.526-5.037-.159-.439.299-1.037.8-1.037.263 0 .527.247 2.127 2.022 1.538 1.696 1.748 1.872 2.153 1.687.105-.052 1.274-1.476 2.584-3.172 1.318-1.697 2.496-3.156 2.619-3.261.606-.475 1.441.193 1.134.905-.062.158-.413.66-.774 1.116-.764.967-.835 1.125-.641 1.486.158.307.483.43.782.29.22-.097 1.6-1.802 1.837-2.26.483-.94.096-2.17-.862-2.733-.43-.246-1.221-.351-1.643-.22zM.791 21.463c-.37.395-.132.976.457 1.08.158.027 1.292.045 2.514.027l2.232-.026.211-.246c.255-.299.264-.492.026-.8l-.175-.229h-2.54c-2.505 0-2.55 0-2.725.194zM38.769 21.498c-.238.308-.229.501.026.8l.21.246 2.233.026c1.222.018 2.356 0 2.514-.026.571-.105.817-.694.457-1.081-.176-.194-.22-.194-2.725-.194h-2.54l-.175.23zM10.415 33.135c-.097.035-.94.835-1.863 1.775-1.494 1.503-1.697 1.74-1.697 1.987 0 .369.273.632.642.632.255 0 .475-.193 2.03-1.749 1.53-1.529 1.75-1.784 1.75-2.03 0-.44-.475-.782-.862-.615zM34.145 33.135a.636.636 0 00-.421.624c0 .228.246.518 1.749 2.021 1.555 1.556 1.775 1.75 2.03 1.75.378 0 .642-.264.642-.633 0-.247-.203-.484-1.732-2.013-.958-.958-1.82-1.758-1.916-1.776a.603.603 0 00-.352.027z"></path></g><defs><clipPath id="clip0_2797_63"><path fill="#fff" d="M0 0h45v45H0z"></path></clipPath></defs></svg>
+              <div>
+                <h6 class="text-third-color text-md font-semibold leading-[1.8] wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s"> التعليم التفاعلي
+                </h6>
+                <span class="text-fourth-color text-md font-normal wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s">تتضمن المنصه ادوات تفاعليه تتضمن تفاعل الطالب مع المعلم لضمان جوده تعليميه عاليه
+                </span>
+              </div>
+            </div>
+            <div class="flex justify-start items-start gap-3 flex-row mb-8">
+                <svg width="60" height="60" fill="none" viewBox="0 0 45 45"><g fill="#324891" clip-path="url(#clip0_2830_402)"><path d="M5.036.123C3.472.501 2.18 1.837 1.855 3.41c-.132.615-.141 32.994-.01 33.689.22 1.186 1.152 2.425 2.25 2.988.713.351 1.047.369 1.328.044.378-.44.202-.8-.536-1.134-.642-.299-1.23-.852-1.52-1.459l-.247-.492V3.56l.202-.431c.326-.703.747-1.16 1.407-1.477l.588-.29 12.34-.026c13.562-.026 12.806-.053 13.65.51.5.334.835.756 1.09 1.397.316.782.676.967 1.133.607.211-.167.238-.229.203-.607C33.6 1.898 32.089.422 30.516.097c-.712-.15-24.865-.123-25.48.026z"></path><path d="M10.459 3.155c-.642.202-1.151.65-1.503 1.327-.193.36-.21.501-.21 1.714 0 1.152.025 1.371.184 1.714.263.571.606.94 1.125 1.213l.448.237H25.18l.448-.237c.518-.272.861-.642 1.125-1.213.158-.343.184-.571.184-1.67 0-1.142-.026-1.318-.202-1.714-.246-.527-.545-.861-1.072-1.169l-.395-.237-7.295-.017c-4.008-.01-7.392.017-7.515.052zM25.11 4.57c.449.273.51.457.51 1.626 0 1.213-.105 1.512-.606 1.75-.273.122-.994.14-7.163.14-7.471 0-7.278.009-7.612-.492-.132-.202-.176-.448-.202-1.178-.035-1.125.07-1.53.501-1.82l.299-.201h6.996c6.776 0 7.005.008 7.277.175zM32.836 6.003l-.228.228V30.102l-4.202 4.22c-2.32 2.32-4.298 4.367-4.403 4.543l-.202.334h-7.84c-5.502 0-7.928.027-8.13.097-.466.167-.606.712-.272 1.046.175.176.29.176 7.954.176 4.28 0 7.778.026 7.778.052 0 .035-.123.475-.272.985-.22.72-.264 1.02-.229 1.38a2.268 2.268 0 002.04 2.039c.377.044.702-.027 1.854-.37.764-.22 1.634-.527 1.924-.685.449-.229 1.574-1.318 7.348-7.084 5.51-5.51 6.864-6.908 7.031-7.26.158-.351.203-.589.203-1.186 0-1.037-.176-1.389-1.24-2.479-1.116-1.134-1.53-1.345-2.575-1.336-1.16 0-1.31.106-3.533 2.312l-1.916 1.89v-11.26c0-10.59-.009-11.267-.15-11.443a.889.889 0 00-.439-.237c-.229-.044-.325-.009-.501.167zm7.137 19.969c.422.184 1.573 1.31 1.784 1.758.378.808.158 1.353-1.037 2.522l-.862.861-1.608-1.608-1.608-1.608.914-.897c1.186-1.16 1.626-1.354 2.417-1.028zM37.38 30.48l1.556 1.556-.791.791-.792.791-1.6-1.608-1.608-1.6.748-.747c.404-.413.782-.747.835-.747.052 0 .79.703 1.652 1.564zm-4.79 7.91c-2.092 2.092-3.911 3.885-4.034 3.973l-.22.167-1.573-1.573-1.574-1.582 3.99-3.999 4-4 1.6 1.6 1.608 1.609-3.797 3.806zm-6.284 4.958c-1.09.342-1.354.378-1.679.21-.281-.14-.545-.536-.545-.8 0-.078.123-.58.281-1.107l.273-.966 1.222 1.212 1.212 1.213-.764.238z"></path><path d="M31.008 35.833c-1.072 1.064-1.213 1.24-1.213 1.494 0 .378.264.642.641.642.255 0 .431-.14 1.495-1.213 1.01-1.02 1.204-1.257 1.204-1.486 0-.325-.317-.641-.66-.641-.202 0-.474.22-1.467 1.204zM10.371 13.403L8.57 15.205l-.632-.633c-.51-.5-.677-.624-.897-.624-.378 0-.624.246-.624.633 0 .273.097.404.95 1.257.773.773.992.95 1.203.95.22 0 .59-.326 2.391-2.128 1.925-1.916 2.136-2.162 2.136-2.417 0-.378-.264-.641-.633-.641-.246 0-.492.21-2.092 1.801zM16.559 14.185c-.422.185-.528.704-.211 1.02.176.176.29.176 5.836.176h5.669l.175-.229c.238-.307.229-.5-.026-.8l-.21-.246-5.485-.017c-4.456-.018-5.528 0-5.748.096zM8.903 20.338a3.06 3.06 0 00-1.801 1.617c-.246.536-.264 1.652-.036 2.171.501 1.16 1.468 1.81 2.69 1.82 1.151 0 2.136-.625 2.62-1.67.333-.721.333-1.697-.01-2.4-.281-.589-.879-1.16-1.45-1.424-.518-.22-1.503-.281-2.013-.114zm1.547 1.371c1.46.738.94 2.918-.694 2.918-1.09 0-1.846-1.072-1.46-2.074a1.543 1.543 0 012.154-.844zM16.392 22.632c-.282.272-.29.65-.018.905l.202.194h11.206l.211-.22c.123-.114.22-.273.22-.343 0-.246-.194-.563-.413-.66-.15-.07-1.864-.096-5.704-.096h-5.494l-.21.22zM8.965 28.644c-.791.254-1.538.922-1.872 1.66-.14.308-.185.59-.185 1.117s.044.809.185 1.116c.246.545.844 1.178 1.388 1.46.387.21.545.236 1.275.236.73 0 .888-.026 1.274-.237.545-.281 1.143-.914 1.389-1.459.264-.58.264-1.652 0-2.232-.255-.554-.844-1.178-1.389-1.46-.342-.175-.597-.228-1.142-.245-.387-.018-.8 0-.923.044zm1.652 1.476c.809.598.923 1.608.273 2.356-.325.369-.756.518-1.328.465-.922-.096-1.573-1.037-1.31-1.924.124-.413.484-.853.845-1.011.378-.176 1.213-.114 1.52.114zM16.392 30.981c-.123.115-.22.317-.22.44s.097.325.22.44l.21.22h5.573c5.317 0 5.59-.01 5.783-.168.281-.228.281-.756 0-.984-.193-.159-.466-.167-5.783-.167h-5.573l-.21.22z"></path></g><defs><clipPath id="clip0_2830_402"><path fill="#fff" d="M0 0h45v45H0z"></path></clipPath></defs></svg>            <div>
+                <h6 class="text-third-color text-md font-semibold leading-[1.8] wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s"> التوفر الدائم
+                </h6>
+                <span class="text-fourth-color text-md font-normal wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s">يمكن للطلاب الوقول للمواد التعليميه في اي وقت 
+                </span>
+              </div>
+            </div>
+            <div class="">
+              <button class="bg-primary-color text-[#fff] rounded-full py-3 px-[50px] font-normal wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s"> إقرأ المزيد </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="flex justify-end items-start flex-row wow fadeIn" data-wow-duration="0.7s" data-wow-delay="0.5s">
+              <img src="../assets/images/about.png" alt="aboutus" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- start about us  -->
+
+        <!-- start video -->
+        <section class="video px-20 pt-10">
+          <div class="video_img flex justify-center items-center flex-row">
+            <img src="../assets/images/video.png" alt="video">
+            <div class="div_icon absolute top" data-bs-toggle="modal" data-bs-target="#videoModel">
+              <svg id="play_icon" viewBox="0 0 163 163" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" ="0px"="">
+                <g fill="none">
+                  <g  stroke-width="4">
+                    <path d="M10,80 C10,118.107648 40.8923523,149 79,149 L79,149 C117.107648,149 148,118.107648 148,80 C148,41.8923523 117.107648,11 79,11" id="lineOne" stroke="#fff"></path>
+                    <path d="M105.9,74.4158594 L67.2,44.2158594 C63.5,41.3158594 58,43.9158594 58,48.7158594 L58,109.015859 C58,113.715859 63.4,116.415859 67.2,113.515859 L105.9,83.3158594 C108.8,81.1158594 108.8,76.6158594 105.9,74.4158594 L105.9,74.4158594 Z" id="triangle" stroke="#fff"></path>
+                    <path d="M159,79.5 C159,35.5933624 123.406638,0 79.5,0 C35.5933624,0 0,35.5933624 0,79.5 C0,123.406638 35.5933624,159 79.5,159 L79.5,159" id="lineTwo" stroke="#fff"></path>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <!-- end video -->
+
+          <!-- start exams_capibilities -->
+    <section class="exams_capibilities__ px-20 pt-10 mb-10">
+      <div class="title__ flex justify-center items-center flex-col gap-1 mb-10">
+        <h3 class="text-third-color font-semibold text-2xl relative"> أختيار القدرات  </h3>
+        <span> ينقسم اختبار القدرات إلى نوعين </span>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="exam_item">
+            <h3 class="text-primary-color text-2xl font-bold mb-5"> القسم اللغوي
+            </h3>
+            <ul class="flex justify-start items-start flex-col gap-2">
+              <li class="text-third-color text-lg font-medium">فهم نصوص القراءة وتحليلها، من خلال الإجابة عن أسئلة تتعلق بمضمون هذه النصوص</li>
+              <li class="text-third-color text-lg font-medium">فهم صيغ النصوص القصيرة الناقصة، واستنباط ما تحتاج إليه من تتمات لتكوّن جملاً مفيدة</li>
+              <li class="text-third-color text-lg font-medium">إدراك العلاقة بين زوج من الكلمات في مطلع السؤال، وقياسها على نظائر تماثلها معطاة في الاختيارات</li>
+              <li class="text-third-color text-lg font-medium">تمييز الكلمة الشاذة في جملة ما
+                المفردة الشاذة: اختيار الكلمة الشاذة من بين أربع كلمات
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="exam_item">
+            <h3 class="text-primary-color text-2xl font-bold mb-5"> القسم الكمي
+            </h3>
+            <ul class="flex justify-start items-start flex-col gap-2">
+              <li class="text-third-color text-lg font-medium">يشتمل على أنواع الأسئلة الرياضية المناسبة لاختبار القدرات (وفقاً للتخصص في الثانوية العامة:علمي أو أدبي)
+              </li>
+              <li class="text-third-color text-lg font-medium">ويركز على القياس والاستنتاج وحل المسائل
+                ويحتاج إلى معلومات أساسية بسيطة</li>
+              <li class="text-third-color text-lg font-medium">ويتضمن هذا الجزء 52 سؤالا موضوعيا 
+                للتخصصات العلمية 
+                وتتوزع الأسئلة وفقاً للآتي، على وجه التقريب:: 
+                24% سؤالاً حسابياً
+                40% سؤالاً هندسياً
+                 23% سؤالاً جبرياً
+                 13% سؤالاً تحليلياً وإحصائياً
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- start exams_capibilities -->
+
+    <!-- start testimonials -->
+    <section class="testimonials__ px-20 pt-10">
+      <div class="title__ flex justify-center items-center flex-row mb-10">
+        <h3 class="text-third-color font-semibold text-2xl relative"> اراّء العملاء  </h3>
+      </div>
+      <div class="owl-carousel testimonials_carousal owl-theme">
+          <div class="testimonials_item">
+            <div class="testi_info flex justify-start items-start flex-row gap-1 mb-3">
+              <img src="../assets/images/team3.jpg" alt="team" loading="lazy" class="!w-[80px] !h-[80px] !rounded-full object-cover">
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h3 class="text-primary-color font-semibold text-xl mb-0"> أحمد يسري </h3>
+                <span class="text-third-color font-medium text-lg">طالب</span>
+              </div>
+            </div>
+            <p class="text-fourth-color font-medium text-[15px] leading-[2]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها </p>
+          </div>
+          <div class="testimonials_item">
+            <div class="testi_info flex justify-start items-start flex-row gap-1 mb-3">
+              <img src="../assets/images/team3.jpg" alt="team" loading="lazy" class="!w-[80px] !h-[80px] !rounded-full object-cover">
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h3 class="text-primary-color font-semibold text-xl mb-0"> أحمد يسري </h3>
+                <span class="text-third-color font-medium text-lg">طالب</span>
+              </div>
+            </div>
+            <p class="text-fourth-color font-medium text-[15px] leading-[2]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها </p>
+          </div>
+          <div class="testimonials_item">
+            <div class="testi_info flex justify-start items-start flex-row gap-1 mb-3">
+              <img src="../assets/images/team3.jpg" alt="team" loading="lazy" class="!w-[80px] !h-[80px] !rounded-full object-cover">
+              <div class="flex justify-start items-start flex-col gap-1">
+                <h3 class="text-primary-color font-semibold text-xl mb-0"> أحمد يسري </h3>
+                <span class="text-third-color font-medium text-lg">طالب</span>
+              </div>
+            </div>
+            <p class="text-fourth-color font-medium text-[15px] leading-[2]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها </p>
+          </div>
+      </div>
+    </section>
+  <!-- start testimonials -->
+
+  <section class="faq px-44 py-16">
+    <div class="title__ flex justify-center items-center flex-row mb-10">
+      <h3 class="text-third-color font-semibold text-2xl relative"> الأسئلة الشائعة </h3>
+    </div>
+    <div class="accordion faq__items flex justify-center items-center flex-col gap-4" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button !text-primary-color font-semibold text-[16px]" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            كيف يعمل منصة مدرسة الفكر التعليمي ؟
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <span class="text-fourth-color font-medium text-[14px]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها </span>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button !text-primary-color font-semibold text-[16px]" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+            كيف يعمل منصة مدرسة الفكر التعليمي ؟
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <span class="text-fourth-color font-medium text-[14px]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها </span>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button !text-primary-color font-semibold text-[16px]" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+            كيف يعمل منصة مدرسة الفكر التعليمي ؟
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <span class="text-fourth-color font-medium text-[14px]"> هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="pt-20 px-20 pb-5 bg-[#e3e3e3]">
+      <div class="row pb-10">
+        <div class="col-md-5">
+          <div class="footer_main flex justify-start items-start flex-col gap-4">
+            <img src="../assets/images/logo.png" alt="logo" width="100" height="100">
+            <span class="text-primary-color font-medium font-xl leading-[1.9]">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز</span>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer__links">
+            <h2 class="text-primary-color font-medium text-2xl mb-4">صفحات مهمة</h2>
+            <ul class="flex justify-start items-start flex-col gap-3">
+              <li>
+                <a href="" class="text-third-color font-medium text-lg"> الرئيسية </a>
+              </li>
+              <li>
+                <a href="" class="text-third-color font-medium text-lg"> من نحن </a>
+              </li>
+              <li>
+                <a href="" class="text-third-color font-medium text-lg"> خدماتنا </a>
+              </li>
+              <li>
+                <a href="" class="text-third-color font-medium text-lg"> تواصل معنا </a>
+              </li>
+              <li>
+                <a href="" class="text-third-color font-medium text-lg"> المدونة </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="footer__links">
+            <h2 class="text-primary-color font-medium text-2xl mb-4">تواصل معنا</h2>
+            <ul  class="flex justify-start items-start flex-col gap-3 mb-4">
+              <li>
+                <a href="" class="flex justify-start items-center gap-2">  
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M5 14.2864C3.14864 15.1031 2 16.2412 2 17.5C2 19.9853 6.47715 22 12 22C17.5228 22 22 19.9853 22 17.5C22 16.2412 20.8514 15.1031 19 14.2864" stroke="#d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 17C13.5 14 18 12.0637 18 8C18 4.68629 15.3137 2 12 2C8.68629 2 6 4.68629 6 8C6 12.0637 10.5 14 12 17Z" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 9C12.5523 9 13 8.55228 13 8C13 7.44772 12.5523 7 12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9Z" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span class="text-third-color font-medium text-lg">
+                    الرياض حي الملك فيصل، السعودية                  
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex justify-start items-center gap-2">  
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.4" d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.38064 9.85323C8.07664 11.3028 9.02543 12.6615 10.227 13.8631C11.4286 15.0646 12.7872 16.0134 14.2368 16.7094C14.3615 16.7693 14.4239 16.7992 14.5028 16.8222C14.7831 16.904 15.1274 16.8453 15.3648 16.6752C15.4316 16.6274 15.4888 16.5702 15.6031 16.4559C15.9527 16.1063 16.1275 15.9315 16.3033 15.8172C16.9662 15.3862 17.8208 15.3862 18.4836 15.8172C18.6594 15.9315 18.8342 16.1063 19.1838 16.4559L19.3787 16.6508C19.9101 17.1822 20.1759 17.448 20.3202 17.7333C20.6073 18.3009 20.6073 18.9712 20.3202 19.5387C20.1759 19.8241 19.9101 20.0898 19.3787 20.6213L19.2211 20.7789C18.6914 21.3085 18.4266 21.5733 18.0666 21.7756C17.6671 22 17.0466 22.1614 16.5884 22.16C16.1754 22.1588 15.8932 22.0787 15.3288 21.9185C12.2954 21.0575 9.43301 19.433 7.04503 17.045C4.65705 14.6571 3.03257 11.7947 2.1716 8.76131C2.01139 8.19687 1.93129 7.91464 1.93006 7.5017C1.9287 7.04347 2.09006 6.42298 2.31448 6.02348C2.51673 5.66345 2.78154 5.39863 3.31116 4.86901L3.4688 4.71138C4.00024 4.17993 4.26596 3.91421 4.55134 3.76987C5.1189 3.4828 5.78917 3.4828 6.35673 3.76987C6.64211 3.91421 6.90783 4.17993 7.43927 4.71138L7.63414 4.90625C7.98375 5.25585 8.15855 5.43065 8.27284 5.60643C8.70383 6.26932 8.70383 7.1239 8.27284 7.78679C8.15855 7.96257 7.98375 8.13738 7.63414 8.48698C7.51983 8.60129 7.46268 8.65845 7.41483 8.72526C7.24482 8.96269 7.18612 9.30695 7.26785 9.5873C7.29084 9.6662 7.32078 9.72854 7.38064 9.85323Z" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <span class="text-third-color font-medium text-lg">
+                      966570212216+                
+                    </span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="flex justify-start items-center gap-2">  
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect opacity="0.4" x="2" y="4" width="20" height="16" rx="3" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.8351 12.7154C13.1739 13.1783 12.8433 13.4097 12.4837 13.4993C12.1661 13.5785 11.8339 13.5785 11.5163 13.4993C11.1567 13.4097 10.8261 13.1783 10.1649 12.7154L2 7C2 5.34315 3.34315 4 5 4H19C20.6569 4 22 5.34315 22 7L13.8351 12.7154Z" stroke="#231F20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <span class="text-third-color font-medium text-lg">
+                      Info@Scientific.Tech         
+                    </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="flex justify-start items-start flex-row gap-3">
+              <li>
+                <a href=""> <img src="../assets/images/facebook.svg" alt="facebook" height="25" width="25"> </a>
+              </li>
+              <li>
+                <a href=""> <img src="../assets/images/twitter.svg" alt="facebook" height="25" width="25"> </a>
+              </li>
+              <li>
+                <a href=""> <img src="../assets/images/youtube.svg" alt="facebook" height="25" width="25"> </a>
+              </li>
+              <li>
+                <a href=""> <img src="../assets/images/instagram.png" alt="facebook" height="25" width="25"> </a>
+              </li>
+              <li>
+                <a href=""> <img src="../assets/images/linkedin.svg" alt="facebook" height="25" width="25"> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="copyRight__  pt-10 flex justify-center items-center flex-row">
+        <p> &copy جميع الحقوق محفوظة - لــ مؤسسة الفكر العلمي 2024</p>
+      </div>
+    </footer>
+  
+    <div class="whatsapp__icon fixed bottom-5 left-5">
+      <a href="https://wa.me/+201070113399?text=">
+        <svg fill="#fff" viewBox="0 0 90 90" width="32" height="32"><path d="M90,43.841c0,24.213-19.779,43.841-44.182,43.841c-7.747,0-15.025-1.98-21.357-5.455L0,90l7.975-23.522   c-4.023-6.606-6.34-14.354-6.34-22.637C1.635,19.628,21.416,0,45.818,0C70.223,0,90,19.628,90,43.841z M45.818,6.982   c-20.484,0-37.146,16.535-37.146,36.859c0,8.065,2.629,15.534,7.076,21.61L11.107,79.14l14.275-4.537   c5.865,3.851,12.891,6.097,20.437,6.097c20.481,0,37.146-16.533,37.146-36.857S66.301,6.982,45.818,6.982z M68.129,53.938   c-0.273-0.447-0.994-0.717-2.076-1.254c-1.084-0.537-6.41-3.138-7.4-3.495c-0.993-0.358-1.717-0.538-2.438,0.537   c-0.721,1.076-2.797,3.495-3.43,4.212c-0.632,0.719-1.263,0.809-2.347,0.271c-1.082-0.537-4.571-1.673-8.708-5.333   c-3.219-2.848-5.393-6.364-6.025-7.441c-0.631-1.075-0.066-1.656,0.475-2.191c0.488-0.482,1.084-1.255,1.625-1.882   c0.543-0.628,0.723-1.075,1.082-1.793c0.363-0.717,0.182-1.344-0.09-1.883c-0.27-0.537-2.438-5.825-3.34-7.977   c-0.902-2.15-1.803-1.792-2.436-1.792c-0.631,0-1.354-0.09-2.076-0.09c-0.722,0-1.896,0.269-2.889,1.344   c-0.992,1.076-3.789,3.676-3.789,8.963c0,5.288,3.879,10.397,4.422,11.113c0.541,0.716,7.49,11.92,18.5,16.223   C58.2,65.771,58.2,64.336,60.186,64.156c1.984-0.179,6.406-2.599,7.312-5.107C68.398,56.537,68.398,54.386,68.129,53.938z"></path></svg>
+      </a>
+    </div>
+  
+    <div class="modal fade" id="videoModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <video controls>
+            <source src="../assets/images/video.mp4" type="video/mp4">
+        </video>
+        </div>
+      </div>
+    </div>
+  
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/wow.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../assets/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/main.js"></script>
+  
+    <script>
+      new WOW().init();
+    </script>
+  
+  <script>
+    $('.owl-carousel.team_carousal').owlCarousel({
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: false,
+    autoplayTimeout: 2000,
+    margin: 30,
+    responsiveClass: true,
+    ltr: true,
+    rtl: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        350: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 4,
+            nav: true,
+            loop: true
+        }
+    }
+  })
+  </script>
+  <script>
+    $('.owl-carousel.blogs_carousal').owlCarousel({
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: false,
+    autoplayTimeout: 2000,
+    margin: 30,
+    responsiveClass: true,
+    ltr: true,
+    rtl: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        350: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 3,
+            nav: true,
+            loop: true
+        }
+    }
+  })
+  </script>
+  <script>
+    $('.owl-carousel.testimonials_carousal').owlCarousel({
+    loop: true,
+    autoplay: true,
+    nav: false,
+    dots: false,
+    autoplayTimeout: 2000,
+    margin: 30,
+    responsiveClass: true,
+    ltr: true,
+    rtl: true,
+    responsive: {
+        0: {
+            items: 1,
+            nav: true
+        },
+        350: {
+            items: 1,
+            nav: true
+        },
+        600: {
+            items: 2,
+            nav: false
+        },
+        1000: {
+            items: 3,
+            nav: true,
+            loop: true
+        }
+    }
+  })
+  </script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.num').each(function() {
+        $(this).animate({
+          Counter: $(this).text()
+        }, {
+          duration: 7000,
+          easing: 'swing',
+          step: function(now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+    });
+  </script>
+  
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").classList.add("show");
+      } else {
+        document.getElementById("navbar").classList.remove("show");
+      }
+    }
+    </script>
+  
+  
+  </body>
+  </html>
