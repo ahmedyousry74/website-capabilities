@@ -447,8 +447,38 @@ input[type=checkbox]:checked {
   .navbar .navbar-brand svg path {
     fill: #000 !important;
   }
-  .about__us, .statistics__, .teamWork__, .advantages__, .reader__, .ai__, .blogs__, .testimonials__, .exams_capibilities__ {
-    padding: 20px;
+  .top_navbar, .about__us, header, .statistics__, .teamWork__, .advantages__, .reader__, .ai__, .blogs__, .testimonials__, .exams_capibilities__, .provide, .video {
+    padding: 20px !important;
+  }
+  .top_navbar {
+    display: none !important;
+    flex-wrap: wrap;
+  }
+  .top_navbar .company_info {
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+  header {
+    height: 100% !important;
+  }
+  header .hero__info {
+    width: 100% !important;
+    margin-top: 70px !important;
+  }
+  header .hero__info h1 {
+    font-size: 30px;
+  }
+  header .hero__img {
+    position: relative !important;
+    inset: 0 !important;
+    margin-top: 35px;
+  }
+  .about__us button {
+    margin-bottom: 20px;
+  }
+  .advantages__ .advantages__item {
+    margin-top: 20px !important;
   }
   footer {
     padding: 20px !important;
