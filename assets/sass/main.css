@@ -447,7 +447,7 @@ input[type=checkbox]:checked {
   .navbar .navbar-brand svg path {
     fill: #000 !important;
   }
-  .top_navbar, .services__, .about__us, header, .statistics__, .teamWork__, .advantages__, .reader__, .ai__, .blogs__, .testimonials__, .exams_capibilities__, .provide, .video {
+  .student_info, .top_navbar, .services__, .about__us, header, .statistics__, .teamWork__, .advantages__, .reader__, .ai__, .blogs__, .testimonials__, .exams_capibilities__, .provide, .video {
     padding: 20px !important;
   }
   .top_navbar {
@@ -1264,6 +1264,11 @@ header {
 }
 header .header__statistics1 {
   box-shadow: 0 9px 65px rgba(255, 255, 255, 0.25);
+}
+@media (max-width: 767px) {
+  header .header__statistics1 {
+    display: none;
+  }
 }
 header .icon {
   padding: 13px;

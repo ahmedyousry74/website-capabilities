@@ -6,6 +6,9 @@ header {
   position: relative;
   .header__statistics1{
     box-shadow: 0 9px 65px rgba(255,255,255,0.25);
+    @media(max-width: 767px){
+      display: none;
+    }
   }
   .icon{
     padding: 13px;
