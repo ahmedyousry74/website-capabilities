@@ -1420,6 +1420,9 @@ input[type="checkbox"]:checked {
   margin: auto;
   z-index: 99999;
   position: relative;
+  @media(max-width: 991px){
+    width: 100%;
+  }
 }
 .form_auth {
   background-color: #fff;
