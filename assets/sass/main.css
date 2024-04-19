@@ -1021,6 +1021,229 @@ input[type=checkbox]:checked {
     transform: rotateZ(-90deg);
   }
 }
+.you_will_get {
+  height: 850px;
+  background: linear-gradient(148deg, rgba(2, 0, 36, 0.7848273098) 0%, rgba(64, 10, 10, 0.9882352941) 100%);
+  margin-top: 50px;
+  padding: 100px 40px;
+}
+.you_will_get .title {
+  z-index: 999;
+  position: relative;
+  color: #EAB221;
+}
+.you_will_get .get__items {
+  margin-top: 60px;
+}
+.you_will_get .get__items .get__item {
+  z-index: 999;
+  position: relative;
+  margin-bottom: 70px;
+}
+.you_will_get .get__items .get__item .icon_box {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  border-width: 3px !important;
+  transform: rotate(45deg);
+}
+.you_will_get .get__items .get__item .icon_box svg {
+  transform: rotate(-45deg);
+}
+.you_will_get .get__items .get__item span {
+  width: 350px;
+}
+.you_will_get .get__items .get__item:after {
+  content: "";
+  position: absolute;
+  left: -85px;
+  top: 19px;
+  width: 170px;
+  height: 40px;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  z-index: 9999999;
+}
+.you_will_get .get__items .get__item.get__item_3:after, .you_will_get .get__items .get__item.get__item_6:after {
+  opacity: 0;
+}
+
+/* start authentication */
+.authentication {
+  padding: 50px 0 0 0;
+  background: linear-gradient(148deg, rgba(2, 0, 36, 0.7848273098) 0%, rgba(64, 10, 10, 0.9882352941) 100%);
+  height: 100vh;
+}
+
+.authentication_div {
+  margin-top: 150px;
+  background-color: #fff4eb;
+  padding: 15px;
+  width: 660px;
+  margin: auto;
+  z-index: 99999;
+  position: relative;
+}
+
+.form_auth {
+  background-color: #fff;
+  padding: 30px 35px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form_auth form span {
+  background-color: transparent;
+  border-left: 0;
+  border-radius: 0 4px 4px 0 !important;
+  border-color: #636363;
+  color: #0D5FF9;
+  padding: 0 5px;
+}
+
+.form_auth form span img {
+  width: 20px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.form_auth .phone-number span img {
+  width: 25px !important;
+  height: 22px !important;
+  margin-right: -3px;
+}
+
+.form_auth .code-phone {
+  border-left: 1px solid #636363;
+  border-radius: 4px 0 0 4px !important;
+  color: #636363;
+}
+
+.form_auth form input.form-control {
+  border-right: 0;
+  border-radius: 4px 0 0 4px !important;
+  background-color: transparent;
+  line-height: 8;
+  height: 45px;
+  border-color: #636363;
+}
+
+.form_auth form textarea.form-control {
+  border-right: 0;
+  border-radius: 4px 0 0 4px !important;
+  background-color: transparent;
+  border-color: #636363;
+  height: 70px;
+}
+
+.form_auth form select {
+  border-radius: 4px !important;
+  background-color: transparent;
+  border-color: #636363;
+  height: 45px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form_auth form .form-control:focus,
+.form_auth form select:focus {
+  box-shadow: none;
+  border-color: #636363;
+  background-color: transparent;
+}
+
+.form_auth form label {
+  right: 23px;
+  top: 3px;
+  left: initial;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 9;
+  color: #231F20;
+}
+
+.form_auth form .textarea span,
+.form_auth form .textarea,
+.form_auth form .textarea textarea {
+  height: 70px !important;
+}
+
+.form_auth .eye-show {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  z-index: 99;
+}
+
+.form_auth .eye-show svg {
+  color: #0D5FF9;
+}
+
+.forget_password {
+  text-align: start;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.forget_password button {
+  color: #0D5FF9;
+  font-weight: bold;
+  border: 0;
+  box-shadow: 0;
+  background-color: transparent;
+}
+
+.form_auth button.submit_form {
+  background-color: #0D5FF9;
+  border-radius: 4px;
+  padding: 15px 10px;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+  border: 0;
+  box-shadow: 0;
+}
+
+.form_auth .have_account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.form_auth .have_account p a {
+  color: #0D5FF9;
+}
+
+.form_auth .check_privacy {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  margin-bottom: 25px;
+}
+
+.form_auth .check_privacy label {
+  margin-right: 20px;
+}
+
+.form_auth .check_privacy label a {
+  color: #0D5FF9;
+}
+
+.form_auth .check_privacy .form-check-input {
+  border-right: 1px solid #ccc;
+  background-color: transparent;
+  height: 20px !important;
+  border-radius: 4px;
+  float: right;
+}
+
+.form_auth .check_privacy input[type=checkbox]:checked {
+  background-color: #0D5FF9 !important;
+}
+
+/* end authentication */
 .advantages__ .advantages__item {
   display: flex;
   justify-content: center;
