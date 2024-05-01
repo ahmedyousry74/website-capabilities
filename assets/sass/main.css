@@ -574,10 +574,37 @@ input[type=checkbox]:checked {
 .services__ .services_item {
   min-height: 470px;
   transition: 0.5s all ease-in-out;
+  border-top-right-radius: 45px;
 }
 .services__ .services_item:hover {
-  border-top-right-radius: 45px;
-  border: 1px solid #0D5FF9;
+  border: 1px solid #fff;
+}
+.services__ .services_item.service_1 {
+  background-color: #ff9920;
+}
+.services__ .services_item.service_2 {
+  background-color: #0052cc;
+}
+.services__ .services_item.service_3 {
+  background-color: #331b64;
+}
+.services__ .services_item.service_4 {
+  background-color: #5EB5EF;
+}
+.services__ .services_item.service_5 {
+  background-color: #28C76F;
+}
+.services__ .services_item.service_6 {
+  background-color: #c72854;
+}
+.services__ .services_item.service_7 {
+  background-color: #c79828;
+}
+.services__ .services_item.service_8 {
+  background-color: #add8e6;
+}
+.services__ .services_item.service_9 {
+  background-color: #ff562f;
 }
 
 .preloader {
