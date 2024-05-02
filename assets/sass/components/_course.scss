@@ -2,4 +2,27 @@
     @media(max-width: 767px){
         padding: 20px !important
     }
+    .course__details{
+        .nav{
+            .nav-item{
+                button{
+                    color: $third-color !important;
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding: 10px 25px;
+                    &.active{
+                        color: #fff !important;
+                        background-color: $primary-color !important;
+                        border-radius: 25px !important;
+                    }
+                }
+            }
+        }
+        .list__content{
+            li{
+                
+            }
+        }
+    }
+
 }

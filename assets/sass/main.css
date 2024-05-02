@@ -1737,7 +1737,17 @@ nav .loginType__div2 {
     padding: 20px !important;
   }
 }
-
+.course__list .course__details .nav .nav-item button {
+  color: #231F20 !important;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 25px;
+}
+.course__list .course__details .nav .nav-item button.active {
+  color: #fff !important;
+  background-color: #0D5FF9 !important;
+  border-radius: 25px !important;
+}
 .statistics__ .statistics_Item {
   border: 2px dashed #E9EEF4;
   border-radius: 8px;
