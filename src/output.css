@@ -769,6 +769,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -875,6 +879,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.\!flex-wrap {
+  flex-wrap: wrap !important;
 }
 
 .flex-nowrap {
@@ -1442,6 +1450,32 @@ video {
 @media (min-width: 640px) {
   .sm\:flex-col {
     flex-direction: column;
+  }
+
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .sm\:\!flex-wrap {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .md\:\!flex-wrap {
+    flex-wrap: wrap !important;
+  }
+
+  .md\:\!flex-nowrap {
+    flex-wrap: nowrap !important;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 }
 
