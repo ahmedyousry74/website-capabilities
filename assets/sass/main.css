@@ -24,7 +24,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #EAB221;
+  background-color: #FDB200;
   border-radius: 0px;
   height: 4px;
 }
@@ -213,9 +213,9 @@ input:focus::-moz-placeholder {
 }
 
 input[type=checkbox]:checked {
-  background-color: #EAB221;
-  color: #EAB221;
-  border-color: #EAB221;
+  background-color: #FDB200;
+  color: #FDB200;
+  border-color: #FDB200;
 }
 
 .title__ h3::before {
@@ -1057,7 +1057,7 @@ input[type=checkbox]:checked {
 .you_will_get .title {
   z-index: 999;
   position: relative;
-  color: #EAB221;
+  color: #FDB200;
 }
 .you_will_get .get__items {
   margin-top: 60px;
@@ -1399,7 +1399,7 @@ input[type=checkbox]:checked {
   }
 }
 .contact .contact__form .contact_header {
-  background-color: #EAB221;
+  background-color: #FDB200;
   padding: 8px 15px;
   height: 100px;
   text-align: center;
@@ -1606,10 +1606,10 @@ nav {
 }
 nav.inside_pages {
   position: relative !important;
-  background-color: #EAB221;
+  background-color: #FDB200;
 }
 nav.show {
-  background-color: #EAB221;
+  background-color: #FDB200;
   position: fixed !important;
   transition: top 0.3s;
   z-index: 1000;
@@ -1640,7 +1640,7 @@ nav .offcanvas-body ul .nav-item .nav-link {
 nav .offcanvas-body ul .nav-item .nav-link::after {
   position: absolute;
   content: "";
-  background-color: #EAB221;
+  background-color: #FDB200;
   width: 35px;
   height: 2px;
   top: 40px;
@@ -1650,16 +1650,16 @@ nav .offcanvas-body ul .nav-item .nav-link::after {
   border-radius: 25px;
 }
 nav .offcanvas-body ul .nav-item .nav-link:hover {
-  color: #EAB221;
+  color: #FDB200;
 }
 nav .offcanvas-body ul .nav-item .nav-link.active {
-  color: #EAB221;
+  color: #FDB200;
   font-weight: 800;
 }
 nav .offcanvas-body ul .nav-item .nav-link.active::after {
   position: absolute;
   content: "";
-  background-color: #EAB221;
+  background-color: #FDB200;
   width: 40px;
   height: 3px;
   top: 40px;
@@ -1696,7 +1696,7 @@ nav .navbar-toggler:active, nav .navbar-toggler:focus {
 }
 nav .offcanvas.offcanvas-start-lg {
   padding-bottom: 10px !important;
-  background: #EAB221;
+  background: #FDB200;
   height: 100%;
   width: 250px;
   right: 0;
@@ -1729,6 +1729,12 @@ nav .loginType__div2 {
 @media (max-width: 767px) {
   nav .loginType__div2 {
     pad: 10px 8px 10px 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .course__list {
+    padding: 20px !important;
   }
 }
 
