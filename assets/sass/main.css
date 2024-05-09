@@ -580,13 +580,13 @@ input[type=checkbox]:checked {
   border: 1px solid #fff;
 }
 .services__ .services_item.service_1 {
-  background-color: #ff9920;
+  background-color: #ffaf40;
 }
 .services__ .services_item.service_2 {
-  background-color: #0052cc;
+  background-color: #ff6666;
 }
 .services__ .services_item.service_3 {
-  background-color: #331b64;
+  background-color: #95cc47;
 }
 .services__ .services_item.service_4 {
   background-color: #5EB5EF;
@@ -1515,11 +1515,20 @@ input[type=checkbox]:checked {
 }
 
 header {
-  height: 750px;
+  height: 570px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+header:after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
 }
 header .header__statistics1 {
   box-shadow: 0 9px 65px rgba(255, 255, 255, 0.25);
@@ -1609,7 +1618,7 @@ nav.inside_pages {
   background-color: #FDB200;
 }
 nav.show {
-  background-color: #FDB200;
+  background-color: #0D5FF9;
   position: fixed !important;
   transition: top 0.3s;
   z-index: 1000;
@@ -1669,7 +1678,7 @@ nav .offcanvas-body ul .nav-item .nav-link.active::after {
 }
 nav .offcanvas-body .auth__navbar {
   gap: 50px;
-  background-color: #0D5FF9;
+  background-color: #FDB200;
   color: #fff;
   padding: 10px 25px;
   border-radius: 25px;

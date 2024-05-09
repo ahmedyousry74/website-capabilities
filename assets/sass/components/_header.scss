@@ -1,9 +1,18 @@
 header {
-  height: 750px;
+  height: 570px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  &:after{
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
   .header__statistics1{
     box-shadow: 0 9px 65px rgba(255,255,255,0.25);
     @media(max-width: 767px){

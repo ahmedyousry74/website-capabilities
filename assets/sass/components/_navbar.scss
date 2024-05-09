@@ -13,7 +13,7 @@ nav{
         background-color: $second-color;
     }
     &.show{
-        background-color: $second-color;
+        background-color: $primary-color;
         position: fixed !important;
         transition: top 0.3s;
         z-index: 1000;
@@ -77,7 +77,7 @@ nav{
         }
         .auth__navbar{
             gap: 50px;
-            background-color: $primary-color;
+            background-color: $second-color;
             color: #fff;
             padding: 10px 25px;
             border-radius: 25px;
