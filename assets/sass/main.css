@@ -218,6 +218,10 @@ input[type=checkbox]:checked {
   border-color: #FDB200;
 }
 
+.title__ h3 {
+  color: #0D5FF9 !important;
+  font-size: 25px !important;
+}
 .title__ h3::before {
   content: "";
   background-color: #0D5FF9;
