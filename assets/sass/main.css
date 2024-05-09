@@ -572,7 +572,7 @@ input[type=checkbox]:checked {
 }
 
 .services__ .services_item {
-  min-height: 350px;
+  min-height: 150px;
   transition: 0.5s all ease-in-out;
   border-top-right-radius: 45px;
 }
