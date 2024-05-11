@@ -77,7 +77,7 @@ nav{
         }
         .auth__navbar{
             gap: 50px;
-            background-color: $second-color;
+            background-color: $primary-color;
             color: #fff;
             padding: 10px 25px;
             border-radius: 25px;
@@ -134,6 +134,11 @@ nav{
         // display: flex;
         @media(max-width: 767px){
             pad: 10px 8px 10px 15px;
+        }
+    }
+    &.show{
+        #loginType{
+            color: #fff !important;
         }
     }
 }

@@ -1674,7 +1674,7 @@ nav .offcanvas-body ul .nav-item .nav-link.active::after {
 }
 nav .offcanvas-body .auth__navbar {
   gap: 50px;
-  background-color: #FDB200;
+  background-color: #0D5FF9;
   color: #fff;
   padding: 10px 25px;
   border-radius: 25px;
@@ -1735,6 +1735,9 @@ nav .loginType__div2 {
   nav .loginType__div2 {
     pad: 10px 8px 10px 15px;
   }
+}
+nav.show #loginType {
+  color: #fff !important;
 }
 
 @media (max-width: 767px) {
