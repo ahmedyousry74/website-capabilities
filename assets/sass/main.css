@@ -1301,7 +1301,6 @@ input[type=checkbox]:checked {
   width: 75px;
   height: 75px;
   line-height: 75px;
-  background: #E5F8F8;
   text-align: center;
   border-radius: 50%;
   margin-bottom: 25px;
@@ -1323,13 +1322,6 @@ input[type=checkbox]:checked {
 .advantages__ .advantages__item:hover {
   border-radius: 0 25px 0 0;
   border: 1px solid #0D5FF9;
-}
-.advantages__ .advantages__item:hover .icon {
-  background-color: #0D5FF9;
-}
-.advantages__ .advantages__item:hover .icon svg, .advantages__ .advantages__item:hover .icon circle, .advantages__ .advantages__item:hover .icon path {
-  fill: #fff;
-  color: #fff;
 }
 
 .blogs__ .blog-item {
