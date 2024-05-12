@@ -276,6 +276,9 @@ input[type="checkbox"]:checked {
         .accordion-button::after {
             position: absolute;
             left: 20px;
+            @media(max-width: 480px){
+              left: 2px;
+            }
         }
 
         .accordion-collapse {
@@ -492,7 +495,7 @@ input[type="checkbox"]:checked {
             }
         }
     }
-    .student_info,.checkout__page,.teacher__details,.services__teacher ,.top_navbar,.services__,.about__us,header,.statistics__,.teamWork__,.advantages__,.reader__,.ai__,.blogs__,.testimonials__,.exams_capibilities__,.provide,.video {
+    .payment__form,.services_details,.student_info,.faq,.checkout__page,.teacher__details,.services__teacher ,.top_navbar,.services__,.about__us,header,.statistics__,.teamWork__,.advantages__,.reader__,.ai__,.blogs__,.testimonials__,.exams_capibilities__,.provide,.video {
         padding: 20px !important;
     }
     .top_navbar{
@@ -1380,7 +1383,9 @@ input[type="checkbox"]:checked {
     background: linear-gradient(148deg, rgba(2, 0, 36, 0.7848273098) 0%, #EAB221 100%);
     margin-top: 50px;
     padding: 100px 40px;
-
+    @media(max-width: 991px){
+      height: auto;
+    }
     .title {
         z-index: 999;
         position: relative;

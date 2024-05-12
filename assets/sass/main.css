@@ -268,6 +268,11 @@ input[type=checkbox]:checked {
   position: absolute;
   left: 20px;
 }
+@media (max-width: 480px) {
+  .faq .faq__items .accordion-button::after {
+    left: 2px;
+  }
+}
 .faq .faq__items .accordion-collapse {
   border: 0px;
   padding: 0;
@@ -451,7 +456,7 @@ input[type=checkbox]:checked {
   .navbar .navbar-brand svg path {
     fill: #000 !important;
   }
-  .student_info, .checkout__page, .teacher__details, .services__teacher, .top_navbar, .services__, .about__us, header, .statistics__, .teamWork__, .advantages__, .reader__, .ai__, .blogs__, .testimonials__, .exams_capibilities__, .provide, .video {
+  .payment__form, .services_details, .student_info, .faq, .checkout__page, .teacher__details, .services__teacher, .top_navbar, .services__, .about__us, header, .statistics__, .teamWork__, .advantages__, .reader__, .ai__, .blogs__, .testimonials__, .exams_capibilities__, .provide, .video {
     padding: 20px !important;
   }
   .top_navbar {
@@ -1058,6 +1063,11 @@ input[type=checkbox]:checked {
   margin-top: 50px;
   padding: 100px 40px;
 }
+@media (max-width: 991px) {
+  .you_will_get {
+    height: auto;
+  }
+}
 .you_will_get .title {
   z-index: 999;
   position: relative;
@@ -1636,7 +1646,7 @@ nav .offcanvas-body ul {
   gap: 8px;
 }
 nav .offcanvas-body ul .nav-item .nav-link {
-  color: #231F20;
+  color: #fff;
   font-weight: 500;
   font-size: 15px;
   transition: 0.3s ease-in-out all;
@@ -1658,7 +1668,7 @@ nav .offcanvas-body ul .nav-item .nav-link:hover {
   color: #FDB200;
 }
 nav .offcanvas-body ul .nav-item .nav-link.active {
-  color: #FDB200;
+  color: #0D5FF9;
   font-weight: 800;
 }
 nav .offcanvas-body ul .nav-item .nav-link.active::after {
